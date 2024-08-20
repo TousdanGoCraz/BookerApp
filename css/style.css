@@ -1,0 +1,102 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+#container{
+     display: flex;
+     flex-flow: row wrap;
+     margin: 2.5% 1.25%;
+     align-items: baseline;
+}
+
+#container > *{
+     width: 25%;
+     flex-grow: 1;
+}
+
+.downloadBtn{
+     align-self: baseline;
+}
+
+.downloadBtn {
+     padding: 10px 20px;
+     font-size: 16px;
+     background-color: #4CAF50;
+     color: white;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     transition: background-color 0.3s;
+ }
+ #downloadBtn:hover {
+     background-color: #45a049;
+ }
+
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+.search-section {
+    background-color: #4a4a4a;
+    padding: 1em;
+    text-align: center;
+}
+.search-section input[type="text"] {
+    width: 60%;
+    padding: 0.5em;
+    font-size: 1em;
+}
+.search-section button {
+    padding: 0.5em 1em;
+    font-size: 1em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+main {
+    padding: 2em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+img {
+     max-width: 200px;
+     max-height: 300px;
+     object-fit: cover;
+     object-position: center;
+   }
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
