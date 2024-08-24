@@ -1,0 +1,11 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: Renner-Bold
+font link: http://indestructibletype.com/BuyRenner.html
+font author: indestructible type*
+font author site: http://indestructibletype.com/Home.html
+Slogan Font: OFLGoudyStMTT.ttf
+
+{"bg":"#AA8356","icon":"#51473C","font":"#ffffff","slogan":"#ffffff"}
+      

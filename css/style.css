@@ -23,18 +23,24 @@
 #container{
      display: flex;
      flex-flow: row wrap;
-     margin: 2.5% 1.25%;
-     align-items: baseline;
+    
 }
 
 #container > *{
      width: 25%;
      flex-grow: 1;
+     flex-shrink: 1;
+     margin: 2.5%;
+     padding: 2.5%;
 }
 
-.downloadBtn{
-     align-self: baseline;
+.section-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+
 
 .downloadBtn {
      padding: 10px 20px;
@@ -55,47 +61,95 @@
 /******************************************
 /* LAYOUT
 /*******************************************/
+/* Header */
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
 }
-header {
-    background-color: #333;
+.main-header {
+    background-color: burlywood;
     color: white;
     text-align: center;
     padding: 1em;
 }
+    .main-header > img{
+        width: 50%;
+    }
+
+    .main-header span{
+        position: fixed;
+        top: 0%;
+        left: 0%;
+
+    }
+
+        .main-header span img{
+            width: 4rem;
+        }
+
+
+#fixed-header {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: burlywood;
+    z-index: 1000;
+    /* Add other styles as needed */
+  }
+
+  #fixed-header > *{
+    width: 50%;
+  }
+
+    #fixed-header span img{
+        width: 4rem;
+    }
+
+  
+.hidden {
+    display: none;
+}
+
 .search-section {
     background-color: #4a4a4a;
     padding: 1em;
     text-align: center;
 }
-.search-section input[type="text"] {
-    width: 60%;
-    padding: 0.5em;
-    font-size: 1em;
-}
-.search-section button {
-    padding: 0.5em 1em;
-    font-size: 1em;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
+        .search-section input[type="text"] {
+        width: 60%;
+        padding: 0.5em;
+        font-size: 1em;
+    }
+    .search-section button {
+        padding: 0.5em 1em;
+        font-size: 1em;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
 main {
     padding: 2em;
     max-width: 800px;
     margin: 0 auto;
 }
 
-img {
-     max-width: 200px;
-     max-height: 300px;
+section img {
+     max-width: 10rem;
+     max-height: 100%;
      object-fit: cover;
      object-position: center;
+   }
+
+   section{
+    box-shadow: 10px 0px 5px 0px rgba(0, 0, 0, 0.19),-10px 0px 5px 0px rgba(0, 0, 0, 0.2);
    }
 /******************************************
 /* ADDITIONAL STYLES
